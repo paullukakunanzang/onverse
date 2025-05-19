@@ -12,7 +12,7 @@ function hero({handleSetModal}) {
             <button onClick={handleSetModal} className='rounded-full font-bold text-white bg-[hsl(205.1,100%,36.1%)] p-4 lg:w-6/12'>connect wallet</button>
         </div>
 
-        <div className='hidden lg:block'>
+        <div className=' lg:block'>
     <svg
       className="BgAnimation__svg"
       viewBox="0 0 602 602"

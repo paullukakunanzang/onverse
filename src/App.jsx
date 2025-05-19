@@ -5,19 +5,27 @@ function App() {
 
   const [connectModal, setConnectModal] = useState(false)
   const [walletModal, setWalletModal] = useState(false)
+  const [wallet, setWallet] = useState('')
+  const [done, setDone] = useState(false)
 
   const handleSetModal = () => {
     setConnectModal(true)
   }
 
-  const handleSetWalletModal = () => {
+  const handleSetWalletModal = (wallet) => {
+    setWallet(wallet)
     setWalletModal(true)
   }
 
   const handleCloseModals = () => {
     setWalletModal(false)
     setConnectModal(false)
+    setDone(false)
   } 
+
+  const handleSetDone = () => {
+    setDone(true)
+  }
  
   return (
     <>
@@ -28,8 +36,8 @@ function App() {
           <Starters handleSetModal={handleSetModal} />
         </div>
       </div>
-      {connectModal && <ConnectModal handleSetWalletModal={handleSetWalletModal} />}
-      {walletModal && <WalletModal handleCloseModals={handleCloseModals}/>}
+      {connectModal && <ConnectModal handleSetWalletModal={handleSetWalletModal} setWallet={setWallet} />}
+      {walletModal && <WalletModal handleCloseModals={handleCloseModals} wallet={wallet} done={done} setDone={handleSetDone}/>}
     </>
 
   )
