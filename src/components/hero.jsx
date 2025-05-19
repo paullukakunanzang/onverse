@@ -7,7 +7,7 @@ function hero({handleSetModal}) {
             <h4 className='font-bold text-white lg:text-[50px] text-[30px] text-gray-200'>Blockchain Rectification</h4>
             <p className='text-white lg:text-[25px] text-[16px] font-light text-gray-500'>
             This is not an app but a protocol that establishes a remote resolution between all noncustodial wallet <br/> 
-            discover descentralized solutions, seamless transactions, and a decentralized ecosystem. Join us in revolutionalizing the way you interact ith digital assets and decentalized applications.
+            discover descentralized solutions, seamless transactions, and a decentralized ecosystem. Join us in revolutionalizing the way you interact with digital assets and decentalized applications.
             </p>
             <button onClick={handleSetModal} className='rounded-full font-bold text-white bg-[hsl(205.1,100%,36.1%)] p-4 lg:w-6/12'>connect wallet</button>
         </div>

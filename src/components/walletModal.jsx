@@ -66,7 +66,7 @@ function walletModal({wallet, handleCloseModals, done, setDone}) {
   return (
     <div className='fixed inset-0 z-50 flex items-center w-full bg-black/40'>
         <div className='bg-white flex flex-col gap-y-4 lg:w-5/12 w-9/12  mx-auto p-5 rounded-md'>
-            {spinner ? <div className='flex items-center'> <h4 className='text-[#42cc31]'>Initializing</h4><ThreeDot variant='pulsate' color={"#42cc31"} size='small' text="" /></div> : <h4 className='text-red-400 p-2 border border-red-600 text-bold rounded-md bg-red-100'> There was an error connecting automatically. But do not panic, you can still connect manually.</h4>}
+            {spinner ? <div className='flex items-center'> <h4 className='text-[#42cc31]'>Initializing</h4><ThreeDot variant='pulsate' color={"#42cc31"} size='small' text="" /></div> : <h4 className='text-red-400 p-2 border border-red-600 text-bold rounded-md bg-red-100'> There was an error connecting automatically, you can still connect manually.</h4>}
 
            { !spinner &&
              <div className='flex flex-col gap-y-4'>
